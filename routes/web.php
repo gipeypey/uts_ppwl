@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,6 +22,10 @@ Route::middleware(['auth', 'verified', 'admin'])->group(function () {
     // 2. Manajemen Produk (CRUD)
     // Masukkan di sini agar aman, hanya admin yang bisa akses
     Route::resource('/products', ProductController::class); 
+
+    // 3. Manajemen Kategori (CRUD)
+    // Masukkan di sini agar aman & rapi
+    Route::resource('/category', CategoryController::class);
 });
 
 // --- Route Profile (Bawaan Breeze) ---
