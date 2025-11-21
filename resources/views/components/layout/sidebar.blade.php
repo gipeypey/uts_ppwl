@@ -115,6 +115,10 @@ transform="translate(19.000000, 11.000000) rotate(-300.000000) translate(-
 <div data-i18n="Basic">Daftar Produk</div>
 <a href="{{ route('products.create')}}" class="menu-link">
 <div data-i18n="Basic">Tambah Data</div>
+<a href="{{ route('category.index')}}" class="menu-link">
+<div data-i18n="Basic">Daftar Kategori</div>
+<a href="{{ route('category.create')}}" class="menu-link">
+<div data-i18n="Basic">Tambah Kategori</div>
 </a>
 </li>
 <li class="menu-header small text-uppercase"><span class="menu-headertext">Transaksi</span></li>
