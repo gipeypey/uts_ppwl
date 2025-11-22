@@ -42,10 +42,6 @@ public function store(Request $request)
 
         $fotoPath = $request->file('foto')->store('foto', 'public');
 
-        $image = $request->file('image');
-        // Simpan ke folder: storage/app/public/products
-        $image->storeAs('public/products', $image->hashName());
-
        Product::create([
             'nama' => $request->nama,
             'harga' => $request->harga,

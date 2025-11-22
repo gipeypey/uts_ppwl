@@ -9,17 +9,17 @@ class Product extends Model
 {
     //
     use HasFactory;
-    protected $fillable = [
-    "foto",
-    "nama",
-    "deskripsi",
-    "harga",
-    "stok",
-    "katgori_id"
-    ];
+    protected $guarded = [];
+    // "foto",
+    // "nama",
+    // "deskripsi",
+    // "harga",
+    // "stok",
+    // "katgori_id",
+    // ];
     
     public function kategori()
     {
-    return $this->belongsTo(Category::class, 'kategori_id');
+    return $this->belongsTo(Category::class);
     }
 }

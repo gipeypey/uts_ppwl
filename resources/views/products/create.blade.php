@@ -18,8 +18,7 @@
 <div class="col-xxl">
 <div class="card mb-4">
 <div class="card-body">
-<form action="{{ route('products.store') }}" method="POST"
-enctype="multipart/form-data">
+<form action="{{ route('products.store') }}" method="POST" enctype="multipart/form-data">
 @csrf
 <div class="row mb-3">
 <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Foto
